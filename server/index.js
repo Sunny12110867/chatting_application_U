@@ -20,8 +20,8 @@ const httpServer = createServer(app);
 app.use(
   cors({
     origin: [
-      "https://sunnychat-silk.vercel.app",
-      "https://sunnychat-silk.vercel.app",
+      "https://chatting-application-u.vercel.app",
+      "https://chatting-application-u.vercel.app",
     ],
     headers: ["Content-Type"],
     credentials: true,
@@ -47,7 +47,7 @@ httpServer.listen(PORT, () => {
 // Initialize socket.io and attach it to the HTTP server
 const io = new Server(httpServer, {
   cors: {
-    origin: ["https://sunnychat-silk.vercel.app", "http://localhost:3000", "*"],
+    origin: ["https://chatting-application-u.vercel.app", "http://localhost:3000", "*"],
     credentials: true,
     methods: ["GET", "POST"],
   },

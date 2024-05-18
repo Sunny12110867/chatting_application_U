@@ -25,7 +25,7 @@ const AccountProvider = ({
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io('ws://https://sunny-test.onrender.com/');
+    socket.current = io('https://chatting-application-u.onrender.com');
     // Clean up function to close socket connection on unmount or logout
     return () => {
       socket.current.disconnect();

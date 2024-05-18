@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://sunny-test.onrender.com";
+const url = "https://chatting-application-u.onrender.com";
 
 export const addUser = async (data) => {
   try {

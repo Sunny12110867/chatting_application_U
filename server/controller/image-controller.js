@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose, { mongo } from 'mongoose';
 
-const url = "https://sunnychat-silk.vercel.app/";
+const url = "https://chatting-application-u.vercel.app";
 
 let gfs, gridFsBucket;
 const conn = mongoose.connection;
